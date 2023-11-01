@@ -28,6 +28,7 @@ num--;
 console.log(num);
 ++num
  console.log(num);
+ console.log(num--);
 
 
  const num1 = 26;
