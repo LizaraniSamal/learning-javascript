@@ -1,13 +1,13 @@
-// console.log(2+3)
-// console.log(6/2)
-// console.log(6**2)   // **=power sign 
-// console.log(19%4)
-// console.log((2*3)+5)
-// console.log(0/0)    //NaN = not a number
-// console.log(typeof 4)
-// console.log(200+0/0)
-// console.log(4+3*4/2)
-// console.log(4+3)
+console.log(2+3)
+console.log(6/2)
+console.log(6**2)   // **=power sign 
+console.log(19%4)
+console.log((2*3)+5)
+console.log(0/0)    //NaN = not a number
+console.log(typeof 4)
+console.log(200+0/0)
+console.log(4+3*4/2)
+console.log(4+3)
 
 
 
