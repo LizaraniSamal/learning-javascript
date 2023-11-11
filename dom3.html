@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom learning part3</title>
+</head>
+<body style="background-color: #212121;color:#fff;">
+    
+</body>
+<script>
+    const newDiv = document.createElement('div');
+    console.log(newDiv);
+    newDiv.className = "main";
+    newDiv.id = "myId";
+    newDiv.setAttribute('title','generated title');
+    
+    newDiv.style.backgroundColor = "green";
+    newDiv.style.padding = "10px";
+    newDiv.innerHTML = "learning javascripe";
+    const addText = document.createTextNode("learning javascripe");
+    newDiv.appendChild(addText);
+
+    document.body.appendChild(newDiv);
+</script>
+</html>

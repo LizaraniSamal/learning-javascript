@@ -1,0 +1,55 @@
+<!-- <button onclick="myFun()">click me</button>
+<script>
+    
+    document.write(window.location.href);
+    document.write(window.location.hostname);
+    document.write(window.location.protocol);
+
+    function myfun(){
+       // window.location = "https://www.youtube.com/";
+        window.location.assign("https://www.youtube.com/");
+    }
+    myfun();
+</script> -->
+
+
+<!-- print page using js -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Print the page</title>
+</head>
+<body style="background-color: #212121;color: #fff;">
+    <div id="divOne">
+        Div one content is here.
+        <button onclick="myFun('divOne')">Divone</button>
+    </div>
+    <div id="divtwo">
+        Div one content is here.
+        <button onclick="myFun('divtwo')">Divtwo</button>
+    </div>
+    <div id="divthree">
+        Div one content is here.
+        <button onclick="myFun('divthree')">Divthree</button>
+    </div>
+
+    <button onclick = "myWholePage()">whole page</button>
+    
+</body>
+<script>
+    function myWholePage(){
+        window.print();
+    }
+
+    function myFun(paravalue){       
+        var backUp = document.body.innerHTML;
+        //console.log(backUp);
+        var divContent = document.getElementById(paravalue).innerHTML;
+        document.body.innerHTML = divContent;
+        window.print();
+        document.body.innerHTML = backUp;
+    }
+    
+</script>
+</html>

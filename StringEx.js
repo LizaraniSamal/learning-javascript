@@ -42,11 +42,31 @@ console.log(msg.repeat(2));
 
 
 
-// TEMPLATE LITERALS
+// TEMPLATE LITERALS string
+// ===============
+//string symbol - "".''
+//string literal symbol - ``
+// let str1 = "liza
+// samal";
+
+let str1 = `*
+   **
+ ***`;
+ console.log(str1);
+
+ let str2 = `liza`,str3 = `samal`;
+//  let str4 = str2 + str3;
+ let str4 = ` ${str2} ${str3}`;
+console.log(str4);
+ 
+//liza Good Morning
+let wish = "Good Night";
+let message = `liza ${wish}`;
+console.log(message);
 
 
 
 
 // MATH
-console.log(Math.pi);
+console.log(Math.PI);
 
