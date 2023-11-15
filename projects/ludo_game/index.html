@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ludo Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JS LUDO</h1>
+        <div class="dice-section">
+            <div class="dice">
+                <p>player1</p>
+                <img src="./image/ludo1.jpg" id="dice1">
+                <button onclick="player1Click()">player1 click</button>
+            </div>
+            <div class="dice">
+                <p>player2</p>
+                <img src="./image/ludo6.jpg" id="dice2">
+                <button onclick="player2Click()">player2 click</button>
+            </div>
+        </div>
+        <div>
+            <!-- <button onclick="ludogame()">click</button> -->
+        </div>
+    </div>
+    <script>
+        const ludogame = () => {
+            const play1 = Math.floor(Math.random()*6) + 1;
+            const play2 = Math.floor(Math.random()*6) + 1;
+            const path1 = `./image/ludo${play1}.jpg`;
+            const path2 = `./image/ludo${play2}.jpg`;
+            document.getElementById("dice1").setAttribute("src",path1);
+            document.getElementById("dice2").setAttribute("src",path2);
+        }
+
+        let tempPlayer1 , tempPlayer2;
+        const player1Click = () => {
+            const result = Math.floor(Math.random()*6) + 1;
+            tempPlayer1 = result;
+            const path = `./image/ludo${result}.jpg`;
+            document.getElementById("dice1").setAttribute("src",path);
+        }
+
+        const player2Click = () => {
+            const result = Math.floor(Math.random()*6) + 1;
+            tempPlayer2 = result;
+            const path = `./image/ludo${result}.jpg`;
+            document.getElementById("dice2").setAttribute("src",path);
+        }
+        
+    </script>
+</body>
+</html>

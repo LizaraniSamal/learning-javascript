@@ -1,11 +1,12 @@
 let num = [43,52,18,65,98];
 console.log(num);
-num.forEach((n ,i) => {
-    console.log(n);
-    console.log(i);
+num.forEach((a,b) => {           //a,b => you can take any variable here a =number,b = index
+    console.log(a);
+    console.log(b);
 });
 
 //MAP METHOD      //IT IS A COLLECTION OF KEY AND VALUES
+console.log("*********");
 
 let map = new Map();
 map.set("liza","java");

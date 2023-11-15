@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Date and time</title>
+</head>
+<body>
+    <h1>discuss about date and time</h1>
+    
+</body>
+<script>
+    var d = new Date(2019, 11, 5);
+    document.write(d);
+
+    var d = new Date(2019, 11, 5);      month [0,11]
+    document.write(d);
+
+    var d = new Date(2020,3);
+    var d = new Date(2020);
+    document.write(d);
+
+//GET DATE
+    var dateObj = new Date();
+    var month = dateObj.getUTCMonth() + 1;      //UTC = universal cordinated time set by the world time standard.
+    var day = dateObj.getUTCDate();
+    var year = dateObj.getUTCFullYear();
+    document.write(year + "/" + month + "/" +day);
+
+
+// SET DATE
+var d = new Date();
+d.setMonth(10);
+d.setFullYear(2020);
+d.setDate(20);
+document.write(d);
+</script>
+<br><br>
+
+<script>
+//TIME
+var d = new Date();
+var n = d.getTime();
+var hour = d.getHours();
+var minutes = d.getMinutes();
+var seconds = d.getSeconds();
+// document.write(n);
+document.write(hour +":"+minutes+":"+seconds);
+</script>
+</html>
+
+
+<br><br><br><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hii</h1>
+    <button onclick="clearInterval(time)">click me</button>
+    <p id="showClock"></p>
+
+
+    <script>
+        //  SET TIME DYNAMICALLY
+
+        var time = setInterval(clockTiming , 1000);  //setInterval is used to set second manually.
+        function clockTiming(){
+        var d = new Date();
+        var localTime = d.toLocaleTimeString();
+        document.getElementById('showClock').innerHTML = localTime;
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Set time out</title>
+</head>
+<body>
+    <button onclick="clearInterval(p)">click me</button>
+
+    
+</body>
+<script>
+    var p = setTimeout(showAlert,3000);
+    function showAlert(){
+        alert("Thank you for click here, visit again");
+    }
+</script>
+</html>
+

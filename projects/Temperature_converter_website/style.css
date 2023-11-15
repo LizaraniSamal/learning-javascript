@@ -1,0 +1,14 @@
+.outerDiv{
+    width: 100vw;
+    height: 100vw;
+    background-color:rgb(235, 223, 235);
+    
+}
+#innerDiv{
+    width:50%;
+    height: 150px;
+    background-color: rgb(134, 49, 63);
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+}

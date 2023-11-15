@@ -29,11 +29,11 @@ function findMax() {
   console.log(max);
 }
 
-function repeat('str' ,numTimes) {
-    let result = '';
-    for(let i = 0; i < numTimes ; i++ ){
-        result = result + str
-    }
-    console.log(result);
-}
+// function repeat('str' ,numTimes) {
+//     let result = '';
+//     for(let i = 0; i < numTimes ; i++ ){
+//         result = result + str
+//     }
+//     console.log(result);
+// }
 

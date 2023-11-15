@@ -22,16 +22,16 @@ console.log(colors);
 let num = [15,18,17,16];
 num[4] = 25;
 console.log(num);
-num.push(30);
+num.push(30);     //adding value in the last index
 console.log(num);
 num.push(45,58);
 console.log(num);
-num.pop();
+num.pop();        //remove dast index of an array.
 console.log(num);
-let newNumber = num.shift();
+let newNumber = num.shift();    //shift is used remove element in first index.
 console.log(newNumber);
 console.log(num);
-num.unshift(80);
+num.unshift(80);    //adding value in the first index.
 console.log(num);
 
 

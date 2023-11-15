@@ -10,7 +10,7 @@ pens = pens + 15;
 console.log(pens);
 
 
-
+console.log("========");
 
 let score = 0;
 score = score + 5;
@@ -18,6 +18,8 @@ console.log(score);
 score += 5;
 console.log(score);
 console.log(score);
+
+console.log("========");
 
 
 let num = 10;
@@ -30,6 +32,8 @@ console.log(num);
  console.log(num);
  console.log(num--);
 
+console.log("========");
+
 
  const num1 = 26;
  console.log(num1);
@@ -37,6 +41,7 @@ console.log(num);
  console.log(num1);
 
 
+ console.log("========");
 
 
  var runDistance = 26.2;
