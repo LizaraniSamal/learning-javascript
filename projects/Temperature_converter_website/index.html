@@ -3,12 +3,23 @@
 <head>
     <title>Temperature Converter</title>
     <link rel="stylesheet" href="style.css">
+    <script src="temp.js"></script>
 </head>
 <body>
     <div class="outerDiv">
         <div id="innerDiv">
-            <!-- <label for="temp">please enter the temperature you want to convert</label> -->
-            
+           <form id="tempcalc" onsubmit="calculateTemp(); return false">
+            <label for="temp" id="toCheck">please enter the temperature you want to convert</label>
+           <br /> <input type="number" name="temp" id="temp" >
+           
+
+            <select name="temp_diff" id="temp_diff">
+                <option value="cel"> °Celsius</option>
+                <option value="fah"> °Fahrenheit</option>
+           </select> <br />
+           <input type="submit" name="temp"><br />
+           <span id="resultContainer"></span>
+        </form>
         </div>
     </div>
 </body>

@@ -1,14 +1,34 @@
 .outerDiv{
-    width: 100vw;
-    height: 100vw;
-    background-color:rgb(235, 223, 235);
-    
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(243, 204, 96);
+    position:relative;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 #innerDiv{
     width:50%;
-    height: 150px;
-    background-color: rgb(134, 49, 63);
+    height: 120px;
+    background-color: rgb(234, 175, 141);
     display:flex;
     justify-content: center;
-    margin: 0 auto;
+    align-items: center;
 }
+
+
+#toCheck{
+    display: flex;
+    justify-content: centre;
+    text-align: center;
+}
+
+#temp{
+    width: 20%;
+   
+}
+/* #temp_diff{
+    width: 20%;
+} */
