@@ -56,13 +56,13 @@ while(i<10){
         break;
     }
 }
-
-//FOR .... OF
+console.log("========");
+//FOR .... OF          //It is basically used in string or array
 let books = ['a','b','c','d','e','f'];
 for(let find of books){
     console.log(find);
 }
-for(let char of "hello world"){
+for(let char of "hello world"){        //iterator-> character
     console.log(char);
 }
 
