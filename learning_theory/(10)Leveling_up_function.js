@@ -116,39 +116,6 @@ console.log(second);
 console.log(Third);
 
 console.log("*******");
-
-// ARROW FUNCTION
-const myName = function() {
-    let userName = "liza";
-    console.log(userName);
-    console.log(this.userName);
-    console.log(this);
-}
-myName();
-
-const firstName = () => {
-    let userName = "puja";
-    console.log(userName);
-    console.log(this.userName);
-    //console.log(this);   //we can not use this keyword in arrow function.
-}
-firstName();
-
-const addTwo = ( num1 , num2 ) => {
-    return num1 + num2;
-}
-console.log(addTwo(10,20));
-
-//implicit return in arrow function
-
-const subTwo = (num1,num2) => num1 - num2 ;
-// or we can write - const subTwo = (num1,num2) => (num1 - num2) ;
-console.log(subTwo(20,10));
-
-const mulNo = (num1 , num2) => ({username:'liza'});
-console.log(mulNo(5,7)); 
-
-
 //this keyword
 
 const user = {

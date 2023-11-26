@@ -58,6 +58,7 @@ while(i<10){
 }
 console.log("========");
 //FOR .... OF          //It is basically used in string or array
+  //for of loop always give the character of the given string or array. 
 let books = ['a','b','c','d','e','f'];
 for(let find of books){
     console.log(find);
@@ -68,6 +69,7 @@ for(let char of "hello world"){        //iterator-> character
 
 console.log("=========");
 //iterating over object
+// for-in-loop:   //it is usually used for object
 const testScore = {
     liza : 60,
     puja : 70,
@@ -97,3 +99,13 @@ for(let score of Object.values(testScore)){
     sum += score;
 }
 console.log(sum);
+
+
+// practice question:
+// print all even number from 0 to 100.
+
+for(let i = 1; i<=100; i++){
+    if(i % 2 ===0){
+        console.log(i);
+    }
+}

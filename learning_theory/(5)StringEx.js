@@ -27,10 +27,10 @@ let liza = "please go away from me";
 console.log(liza.indexOf("go"));
 console.log(liza.indexOf('y'));
 
-
+console.log("**********");
 
 let str = "please come here";
-console.log(str.slice(7,11));
+console.log(str.slice(7,11));    //always give endindex-1 result
 console.log(str.slice(12));
 console.log(str.slice(-8));
 
@@ -44,7 +44,7 @@ console.log(msg.repeat(2));
 
 // TEMPLATE LITERALS string
 // ===============
-//string symbol - "".''
+//string symbol - "",''
 //string literal symbol - ``
 // let str1 = "liza
 // samal";
@@ -69,4 +69,10 @@ console.log(message);
 
 // MATH
 console.log(Math.PI);
+
+// practise question:
+// prompt the user to enter their full name and print username with @ and length of the full namme.
+
+
+
 

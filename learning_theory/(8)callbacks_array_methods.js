@@ -6,7 +6,15 @@ num.forEach((a,b) => {           //a,b => you can take any variable here a =numb
 });
 
 //MAP METHOD      //IT IS A COLLECTION OF KEY AND VALUES
+// it is same as forEach() but map() gives an new array.
+//syntax: arr.map(callbackfnx(value,idx,array)).
 console.log("*********");
+
+let nums=[45,67,98];
+let newArr1 = nums.map((val) => {
+    return val;
+});
+console.log(newArr1);
 
 let map = new Map();
 map.set("liza","java");
@@ -31,7 +39,29 @@ const myNumbers = [1,2,3,4,5,6,7,8,9,10];
  let newNums = myNumbers.map((num) => {return num = num+10});
 console.log(newNums);
 
+// for each loop in array
 console.log("****for each loop****");
+
+// syntax: Array.forEach(callBackFunction) -> A callback is function pass as an argument to another function.
+
+let cities = ["bbsr","ctc","rkl","bal","jjkr"];
+cities.forEach((item) => {
+    console.log(item);
+});
+
+let number = [1,2,3,4,5,6];
+number.forEach((mynum) => {
+    console.log(mynum);
+    
+});
+
+
+// practise: In ana array print the square of each no by foreach loop.
+ let arr = [1,2,3,4,5,6];
+ arr.forEach((value) => {
+    console.log(value*value); 
+ });
+ 
 
 const coding = ["js","ruby", "java", "python","cpp"];
 // lambda function syntax:
@@ -43,6 +73,8 @@ function printFunc(item){
 }
 const values = coding.forEach(printFunc);
 console.log(values);   //we can not print value so we use filter method
+
+
 
 //FILTER METHODS        this method will execute when condition is true
  
@@ -82,6 +114,14 @@ console.log(books.filter((bk) => bk.publish >= 1995 && bk.genre === "history"));
 
 console.log("=====");
 
+//practise question
+//we are given array of marks.find out the student of marks greater than 90.
+let marks = [76,89,65,34,90,79];
+let newMarks = marks.filter((number) => {
+    return number>90;
+});
+console.log(newMarks);
+
 //chaining method
 
 const arrValue = [1,2,3,4,5,6,7];
@@ -89,8 +129,9 @@ const newArray = arrValue.map((num) => num*10).map((num) => {return num+1}).filt
 console.log(newArray);
 
 console.log("$$$$$$$$$$$$");
-// reduce method     //it is use of add all element in array
 
+// reduce method     //it is use of add all element in array
+//perform some operations and reduce the array to a single value.it returns that single value.
 const arrNum = [1,2,3];
 const total = arrNum.reduce(function(acc , curValue){
    // console.log('acc: ${acc} and curValue: ${curValue}')
@@ -122,6 +163,8 @@ const shoopingCart = [
 ];
 const newTotal =shoopingCart.reduce((acc,item) => acc + item.price,0);
 console.log(newTotal);
+
+
 
 
 console.log('++++++++');

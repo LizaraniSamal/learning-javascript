@@ -34,9 +34,33 @@ console.log(num);
 num.unshift(80);    //adding value in the first index.
 console.log(num);
 
+console.log("============");
+/* We can use for-of and for-in method in array
+   but for-of loop is more preferable */
+
+   let cities = ["bbsr","ctc","rkl","bdk","jjkr"];
+   for(let c of cities){
+    console.log(c);
+   }
+
+  //  practise question -1
+
+  let student = [85,97,44,37,76,60];
+  let sum = 0;
+  for (let index = 0; index < student.length; index++) {
+      sum = sum + student[index];  
+  }
+  console.log(sum);
+  let avg = sum / student.length;
+  console.log("avg of the student is: "+ avg);
+
+  // practise question-2:
+ 
+  
+  
 
 
-//MORE METHODS
+// MORE METHODS
   let userName = ['liza','puja','lucky','pupun'];
   let age = [23,25,15,22];
   total = userName.concat(age);
@@ -46,12 +70,16 @@ console.log(userName.includes('Liza'));  //false
 console.log(userName.reverse());
 console.log(total.reverse());
 
+//slice(): does not change original array
+console.log("==========");
 let coolColors = ['red','orange','blue','golden','sky','violet','yellow','green'];
 console.log(coolColors.slice(3,5));
 console.log(coolColors.slice(-3));
 
+// splice() : change original array ,it is used for add or delete items
 let months = ['jan','feb','mar','apl','may'];
-remainMonth = months.splice(1,4);
+// remainMonth = months.splice(1,4);
+console.log(months.splice(1,2,101,102));
 console.log(months);
 
 
